@@ -13,7 +13,7 @@
 #include <unistd.h>
 #include <stdio.h>
 
-int ft_ultimate_range(int **range, int min, int max)
+int	ft_ultimate_range(int **range, int min, int max)
 {
 	int	*tab;
 	int	j;

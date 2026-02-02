@@ -6,33 +6,35 @@
 /*   By: emastran <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/02 09:52:59 by emastran          #+#    #+#             */
-/*   Updated: 2026/02/02 11:07:04 by emastran         ###   ########.fr       */
+/*   Updated: 2026/02/02 13:18:32 by emastran         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdlib.h>
 #include <unistd.h>
 #include <stdio.h>
 
-int *ft_range(int min, int max)
+int	*ft_range(int min, int max)
 {
 	int	*s;
 	int	i;
+	int	size;
 
 	i = 0;
 	if (min >= max)
 		return (NULL);
-	s = (int *)malloc((max - 1) * sizeof(int));
+	if (max == 2147483647)
+		return (NULL);
+	size = (long long)max - min;
+	s = malloc(size * sizeof(int));
 	while (min < max)
 	{
-		s[i] = min;
-		i++;
-		min++;
+		s[i++] = min++;
 	}
-	return (s);	
+	return (s);
 }
 /*int main()
 {
-	int *arr = ft_range(1, 10);
+	int *arr = ft_range(1, 2147483647);
 	int size = 10 -1;
 	int i = 0;
 

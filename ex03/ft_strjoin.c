@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include <stdlib.h>
+#include <stdio.h>
 
 int	ft_strlen(char *str)
 {
@@ -57,3 +58,17 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 	*temp = 0;
 	return (x);
 }
+
+/*int main(void)
+{
+    char *strs[] = {"ciao", "come", "va"};
+    char *res;
+
+    res = ft_strjoin(3, strs, " ");
+    if (!res)
+        return (1);
+
+    printf("%s\n", res);
+    free(res);
+    return (0);
+}*/

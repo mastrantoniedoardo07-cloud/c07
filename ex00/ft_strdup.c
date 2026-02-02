@@ -11,12 +11,13 @@
 /* ************************************************************************** */
 #include <stdlib.h>
 #include <stdio.h>
+
 char	*ft_strdup(char *src)
 {
 	int		i;
 	int		len;
 	char	*dest;
-	
+
 	i = 0;
 	len = 0;
 	while (src[len])
@@ -27,8 +28,7 @@ char	*ft_strdup(char *src)
 		dest[i] = src[i];
 		i++;
 	}
-	return(dest);
-
+	return (dest);
 }
 /*int main()
 {
