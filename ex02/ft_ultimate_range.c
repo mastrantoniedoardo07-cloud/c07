@@ -3,17 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_ultimate_range.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mdell-or <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: emastran <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/29 07:48:54 by mdell-or          #+#    #+#             */
-/*   Updated: 2026/01/29 11:17:44 by mdell-or         ###   ########.fr       */
+/*   Created: 2026/02/02 11:13:20 by emastran          #+#    #+#             */
+/*   Updated: 2026/02/02 11:16:57 by emastran         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-//#include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
+#include <stdio.h>
 
-int	ft_ultimate_range(int **range, int min, int max)
+int ft_ultimate_range(int **range, int min, int max)
 {
 	int	*tab;
 	int	j;
@@ -32,8 +32,7 @@ int	ft_ultimate_range(int **range, int min, int max)
 		*(tab++) = min++;
 	return (j);
 }
-/*
-int	main(void)
+/*int main()
 {
 	int	x = 5;
 	int	*i = &x;
